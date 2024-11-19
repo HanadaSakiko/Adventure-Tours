@@ -661,15 +661,15 @@ merit メリット
 -------------------------*/
 footer {
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
   background: #666;
   color: #fff;
-
 }
 
 footer .footerContent {
   width: 97%;
   text-align: center;
+  margin: 0 auto;
 }
 
 footer p {
@@ -1224,6 +1224,7 @@ footer p {
   /*-------------------------
     SP footer フッター
   -------------------------*/
+  
   footer .footerContent {
     width: 88%;
   }
