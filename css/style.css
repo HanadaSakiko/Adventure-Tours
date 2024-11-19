@@ -1,0 +1,1231 @@
+
+@charset "UTF-8";
+
+/* Reset リセット
+---------------------------------------------------*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,ruby,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,form,fieldset,legend,label,header,footer,hgroup,menu,nav,main,article,section,aside,details,figure,figcaption,canvas,embed,output,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font-weight:500;}
+body{line-height:1.5;
+}
+ol,ul{
+  list-style:none;
+}
+img,video,iframe{
+  vertical-align:bottom;
+}
+/* 画像の伸縮に関する設定 */
+img {
+  max-width: 100%;
+	height: auto;
+}
+/* Fonts
+---------------------------------------------------*/
+body{font-family:"游ゴシック","Yu Gothic","游ゴシック体","YuGothic","Hiragino Sans","ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+  font-weight:500;
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+  letter-spacing:-0.1em;
+}
+
+.mincho {
+  font-family:"游明朝","Yu Mincho","游明朝体","YuMincho","ヒラギノ明朝 ProN","Hiragino Mincho ProN","Sawarabi Mincho","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",Serif;
+  letter-spacing:0.1em;
+  font-weight:800;
+}
+
+/* Layout */
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexReverse{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+/* ボタン */
+.btnArea{
+  text-align: center;
+}
+.btnArea p{
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+/*-------------------------
+  共通設定
+-------------------------*/
+.container{
+  width: 100%;
+  max-width: 1200px;
+  min-width: 375px;
+  margin:0 auto;
+}
+
+main{
+  margin: 0 auto
+}
+
+.contentHeader{
+  background: #64b521;
+  color: #fff;
+  font-size: 2.5rem;  /* 40px */
+  letter-spacing:-0.2em;
+  font-weight: bold;
+  padding: 5px 0;
+  text-align: center;
+}
+
+section h2{
+  width: 70%;
+  margin: 0 auto;
+}
+section .mainContent{
+  width:68%;
+  margin: 0 auto;
+  padding: 50px 1%;
+}
+
+section:nth-child(4) .mainContent{
+  padding: 50px 1% 75px 1%;
+}
+section:nth-child(5) .mainContent{
+  padding: 50px 1% 37px 1%;
+}
+
+section:nth-child(6) .mainContent{
+  padding: 50px 1% 52px 1%;
+}
+
+section:nth-child(7) .mainContent{
+  padding: 50px 1% 38px 1%;
+}
+section:nth-child(8) .mainContent
+{
+  padding: 50px 1% 70px 1%;
+}
+
+section:nth-child(9) .mainContent
+{
+  padding: 50px 1% 55px 1%;
+}
+
+section:nth-child(10) .mainContent
+{
+  padding: 50px 1% 30px 1%;
+}
+
+/*-------------------------
+  トップへ戻るボタン（ページ右下に固定）
+-------------------------*/
+.container {
+  scroll-behavior: smooth;
+}
+.topBtn {
+  background-image: url(../assets/image/pic_top.png);
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 120px;
+  right:120px;
+}
+
+
+
+
+/*-------------------------
+  header ヘッダー
+-------------------------*/
+header{
+  max-width: 100%;
+  background: url(../assets/image/ph_header.png) center  no-repeat;
+  background-size: cover;
+  height: 650px;
+  padding-top:90px;
+  text-align: center;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 3.25rem; /* 52px相当 */
+  font-weight: bold;
+  letter-spacing: -0.1em;
+  margin-bottom: 45px;
+}
+
+header .logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header .headerText {
+  margin-bottom: 230px;
+}
+
+
+/*-------------------------
+  concept コンセプト
+-------------------------*/
+
+.conceptArea{
+  justify-content: space-around;
+}
+.conceptText {
+  width: 58%;
+}
+.spImgArea {
+  display: none;
+}
+
+/*-------------------------
+  aboutAs 会社紹介
+-------------------------*/
+.aboutAs {
+  width:100%;
+}
+.mainImg,
+.aboutAs h3 {
+  text-align: center;
+}
+.aboutAs h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 35px 0 38px;
+  background: url(../assets/image/pic_midashi.png) center 60px no-repeat;
+  background-size: 160px;
+}
+
+.aboutText {
+  padding: 0 30px;
+}
+
+.aboutText p br:first-child{
+  display: none;
+}
+
+.aboutText br:first-child {
+  display: none;
+}
+/*-------------------------
+  concept コンセプト
+  aboutAu 会社紹介
+  共通設定
+-------------------------*/
+.conceptText p:last-child,
+.aboutText p:last-child
+{
+  color: #ff0000;
+  font-size: 1.09375rem; /* 17.5px */
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/*-------------------------
+  アドベンチャー adventure
+-------------------------*/
+.adventContent{
+  justify-content: space-around;
+  margin-bottom: 32px;
+}
+
+.adventContent p {
+  width: 45%;
+  padding: 20px 1.2%;
+
+}
+
+
+/*-------------------------
+  condition 条件
+-------------------------*/
+.conditionList {
+  margin: 0 auto;
+}
+.condition {
+  width: 46%;
+  margin: 12px 0;
+  margin-left: 15px;
+  align-items: center;
+}
+
+.condition:nth-child(2) {
+  align-items: start;
+}
+
+.conditionImg {
+  background: url(../assets/image/pic_mark.png) no-repeat;
+  width:18%;
+  height:72px;
+  line-height: 2;
+  display: flex;
+}
+
+.conditionText {
+  width: 82%;
+}
+
+.conditionText span {
+  color: #00A0C6;
+  font-weight: bold;
+}
+
+.conditionText p:last-child:before {
+  content: "★";
+}
+
+/*-------------------------
+  roadmap ロードマップ
+-------------------------*/
+/* .roadmap {
+  margin-left: 2%;
+} */
+.roadmap .tableArea {
+  width:38%;
+  margin-left: 1%;
+  margin-right:2%;
+}
+.roadmap .textArea {
+  width:55%;
+}
+.roadmap .textArea p {
+  margin-bottom:8px;
+}
+.roadmap .textArea p::before {
+  content:"◾︎ ";
+}
+.tableArea table{
+  width: 100%;
+  background: #ffffd6;
+  padding: 2px;
+  margin-bottom: 16px
+}
+
+.tableArea table th{
+  background: #98C1FF;
+}
+.tableArea table th,
+.tableArea table tr{
+  width: 100%;
+}
+
+.tableArea table td{
+  width: 50%;
+}
+
+.tableArea table tr:nth-child(2) td:first-child{
+  background: #cfdfe6;
+}
+.tableArea table tr:nth-child(2) td:last-child{
+  background: #C9FFBD;
+}
+
+.tableArea tr td ul,
+.tableArea tr td p
+ {
+  background: #DDF8FE;
+}
+
+.tableArea table tr:nth-child(4) td,
+.tableArea table tr:nth-child(5) td,
+.tableArea table tr:nth-child(6) td
+{
+  font-size:0.8125rem;  /* 13px */
+  letter-spacing: -0.11em;
+}
+
+.tableArea table:last-child tr:nth-child(4) p,
+.tableArea table:last-child tr:nth-child(5) p,
+.tableArea table:last-child tr:nth-child(6) p
+{
+  font-size:0.90625rem; /* 14px */
+}
+.tableArea table:last-child tr:nth-child(5) p,
+.tableArea table:last-child tr:nth-child(6) p{
+  background: #FFFE9A;
+}
+
+.tableArea table:last-child tr:nth-child(6) td p
+{
+  margin: 0 auto;
+  text-align: center;
+  width: 45%;
+}
+
+
+.tableArea table tr td p
+{
+  padding: 4px 10px;
+}
+
+/*-------------------------
+  shop ショップ
+-------------------------*/
+.shopContent {
+  width: 45%;
+}
+
+.shopContent:first-child,
+.shopContent:nth-child(2)
+{
+  margin-bottom:30px;
+}
+
+.shopContent {
+  margin-left:2%;
+}
+.shopContent h3 {
+  font-size:1.875rem;
+  text-align: center;
+  margin: 15px 0;
+}
+.shopText {
+  width:92%;
+  padding-left:10px;
+  margin-bottom:15px;
+  letter-spacing: -0.12em;
+}
+
+/*-------------------------
+  activity アクティビティ
+-------------------------*/
+.activity div {
+  width:31.333%;
+}
+
+.activity div:first-child,
+.activity div:nth-child(4)
+{
+  margin-left: 12px;
+}
+.activity div .activityText {
+  width:80%;
+  margin-left: 10px;
+}
+
+.activity div:first-child .activityText,
+.activity div:nth-child(2) .activityText,
+.activity div:nth-child(3) .activityText
+ {
+  margin-bottom: 15px;
+}
+
+.activity div .activityText h3{
+  font-size:1.75rem; /* 28px */
+  text-align: center;
+  margin:17px 0;
+}
+
+/*-------------------------
+  ガイド
+-------------------------*/
+.guide {
+  width: 100%;
+}
+
+.guideImage{
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.guide div{
+  width:45%;
+}
+.guide div:nth-child(2){
+  width:50%;
+}
+.guide div p{
+  width: 90%;
+}
+
+.guide div p:nth-child(3){
+  font-size:0.96875rem; /* 15.5px */
+}
+
+.guideAbout {
+  font-size: 1.125rem; /* 18px */
+  color: #00A0C6;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.guide .guideMarkShop{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*-------------------------
+merit メリット
+-------------------------*/
+.merit {
+  width: 100%;
+}
+.merit div {
+  width: 45.5%;
+  margin-bottom: 20px;
+}
+.merit div:nth-child(3),
+.merit div:nth-child(4)
+ {
+  margin-bottom: 35px;
+}
+
+.merit div:nth-child(5),
+.merit div:nth-child(6)
+ {
+  margin-bottom: 30px;
+}
+
+.merit div p{
+  width: 82%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.merit div img{
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/*-------------------------
+  recruit 募集要項
+-------------------------*/
+.recruit {
+  width: 100%;
+  background: url(../assets/image/bg_logo.png)  50% 50% no-repeat;
+  background-size: 58% 89%;
+}
+
+.recruit .recruitDetail{
+  width: 80%;
+  margin: 0 auto 15px;
+  letter-spacing: 0;
+}
+
+.recruitDetail p{
+  line-height: 1.6;
+  margin-bottom: 3px;
+}
+
+
+.recruitItem::before{
+  content: "◾︎ "
+}
+
+.recruitItem::after{
+  content: "： "
+}
+
+.recruitDetail .remarks {
+  margin-left: 1.5em;
+}
+
+.recruitDetail   p:first-child .remarks{
+ color: #ff0000;
+}
+
+.recruitDetail p:last-child br:first-child{
+  display: none;
+ }
+
+
+.welfare {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.welfare ul{
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+
+.welfare li{
+  text-indent: 0.1em;
+}
+
+.welfare li::before{
+  content:"・"
+}
+
+/*-------------------------
+   contact お問合せ
+-------------------------*/
+.contact{
+  width: 100%;
+  letter-spacing: -0.13em;
+  /* justify-content: space-around; */
+}
+
+.contact .contactText {
+  width: 45%;
+  margin-left: 3.603%;
+}
+
+.contact img {
+  width: 44%;
+  height: 44%;
+  margin-left: 13px;
+}
+
+.contact .contactAbout{
+  font-size: 1.125rem; /* 18px */
+  border-collapse: collapse;
+  letter-spacing: 0em;
+  margin-bottom: 15px;
+  color: #00A0C6;
+}
+
+.contact .contactText .contactAbout span::after{
+  content: " : "
+}
+
+.contact .remarks{
+  text-indent: -0.5em;
+  margin-bottom: 8px;
+}
+.contact .contactText ul{
+  margin-bottom: 12px;
+}
+
+
+.contact .contactText ul li{
+  margin-bottom: 5px;
+}
+
+.contact .contactText ul li span{
+  padding-left: 23px;
+}
+
+/*-------------------------
+ company 会社概要
+-------------------------*/
+.company {
+  width: 100%;
+}
+.company .companyDetail{
+  width: 100%;
+  height: 38.666%;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.company h3{
+  text-align: center;
+  color: #00A0C6;
+  font-weight: bold;
+  font-size: 1.625rem; /* 26px */
+  margin-bottom: 32px;
+}
+.companyDetail img {
+  width: 27%;
+  height: 27%;
+  margin-left:10px;
+}
+
+.companyDetail table{
+  width: 55%;
+  letter-spacing: 0;
+  border-collapse: collapse;
+}
+
+.companyDetail table tr{
+  border-top : 1px solid #ccc;
+  border-bottom : 1px solid #ccc;
+  
+}
+
+.companyDetail table th{
+  font-weight: 400;
+  vertical-align: top;
+  text-align: left;
+  padding: 10px;
+}
+
+.companyDetail table td{
+  padding: 10px 0;
+}
+.companyDetail table td ul li{
+  margin-bottom: 5px;
+}
+
+.companyDetail table tr:nth-child(2) td p:nth-child(odd){
+  text-indent: -0.6em;
+}
+
+.companyDetail table tr:nth-child(3) th{
+  padding: 10px 20px 10px 0;
+}
+
+/*-------------------------
+  footer フッター
+-------------------------*/
+footer {
+  width: 100%;
+  padding: 20px;
+  background: #666;
+  color: #fff;
+
+}
+
+footer .footerContent {
+  width: 97%;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 15px;
+}
+
+/* 600以下のとき */
+@media (max-width: 600px) {
+
+  /*-------------------------
+    SP header ヘッダー
+  -------------------------*/
+  header {
+    height: 500px;
+    padding-top:70px;
+    padding-bottom: 20px;
+  }
+
+  header h1{
+    width:95%;
+    font-size: 1.5rem; /* 52px相当 */
+    margin-bottom: 30px;
+    letter-spacing: 0;
+  }
+
+  header .headerText {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 88px;
+  }
+  header .headerText br {
+    display: none;
+  }
+  /*-------------------------
+    SP 共通
+  -------------------------*/
+  .contentHeader{
+    font-size: 1.4375rem; /* 23px */
+    font-weight: bold;
+    padding: 6px 0 ;
+  }
+
+  section h2{
+    width: 100%;
+  }
+
+  section .mainContent{
+    width:90%;
+    margin: 0 auto;
+    padding: 50px 0 23px;
+  }
+  section:nth-child(2) .mainContent{
+    width:100%;
+    padding: 50px 0 26px;
+  }
+
+  section:nth-child(3) .mainContent{
+    padding: 50px 0;
+  }
+
+  section:nth-child(4) .mainContent{
+    padding: 50px 0 46px;
+  }
+
+  section:nth-child(5) .mainContent{
+    padding: 50px 0 47px;
+  }
+
+  section:nth-child(6) .mainContent{
+    padding: 25px 0 20px;
+  }
+
+    section:nth-child(7) .mainContent
+  {
+    padding: 50px 0;
+  }
+
+  section:nth-child(8) .mainContent{
+    width:100%;
+    padding: 50px 0 68px 0;
+  }
+
+
+  section:nth-child(9) .mainContent
+  {
+    width:100%;
+    padding: 50px 0 52px;
+  }
+
+  section:nth-child(10) .mainContent
+  {
+    width:100%;
+    padding: 25px 0 50px;
+  }
+
+  section:nth-child(11) .mainContent
+  {
+    width:100%;
+    padding: 50px 0 48px
+  }
+
+  section:nth-child(12) .mainContent
+  {
+    padding: 50px 0 50px
+  }
+
+  header .btnArea p{
+    display: none;
+  }
+
+  /*-------------------------
+    トップへ戻るボタン
+  -------------------------*/
+  .topBtn {
+    display: none;
+  }
+
+  /*-------------------------
+    SP concept コンセプト
+  -------------------------*/
+  .conceptArea{
+    justify-content: start;
+  }
+  .conceptImg {
+   display: none;
+  }
+
+  .contentHeader{
+    font-size: 1.375rem;
+   }
+  
+  .conceptText {
+    width: 100%;
+  }
+  .conceptArea .spImgArea {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .spImgArea .conceptImgsp {
+    width: 32.5%;
+  }
+  /*-------------------------
+    SP aboutAu 会社紹介
+  -------------------------*/
+
+  .aboutAs h3 {
+    padding: 33px 0 15px;
+  }
+  .aboutText p:first-child{
+    letter-spacing: -0.098em;
+
+  }
+
+  .aboutText br:first-child {
+    display: block;
+  }
+  .aboutText br:nth-child(2){
+    display: none;
+  }
+
+  .conceptText p:last-child
+  {
+    margin-top: 20px;
+  }
+
+  .aboutText p:last-child
+  {
+    margin-top: 15px;
+  }
+
+  .aboutText {
+    padding: 0 15px;
+  }
+
+  .aboutText p br:first-child{
+    display: block;
+  }
+  
+
+  /*-------------------------
+    SP アドベンチャー
+  -------------------------*/
+  .adventContent{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .adventContent img {
+    text-align: center;
+  }
+
+  .adventContent p {
+    width: 90%;
+    padding: 20px 1.2%;
+  }
+
+  .adventContent:nth-child(2) p {
+    padding: 20px 1.2% 25px;
+  }
+
+
+  .spImgArea {
+    display: block;
+    margin-bottom:22px;
+  }
+
+  .adventure .spImgArea img:first-child{
+    height: 210px;
+  }
+  .adventure .spImgArea img:last-child{
+    height: 220px;
+  }
+
+  .adventContent:nth-child(2) img,
+  .adventContent:nth-child(4) img{
+    display: none;
+  }
+
+  .adventContent:nth-child(3){
+    padding: 0;
+  }
+
+  .adventContent:nth-child(4) p{
+    padding: 0 0 13px 0;
+  }
+
+  /*-------------------------
+    SP conditionList 条件
+  -------------------------*/
+  .conditionList {
+    display: block;
+  }
+  .condition {
+    width: 100%;
+    margin-left: 12px;
+  }
+  .conditionImg {
+    width:18%;
+  }
+  .conditionText {
+    width: 73%;
+    margin-left: 5px;
+  }
+
+  /*-------------------------
+    SP roadmap ロードマップ
+  -------------------------*/
+
+  .roadmap .tableArea {
+    width:98%;
+    margin-left: 3%;
+    margin-right:2%;
+  }
+  .roadmap .textArea {
+    width:94%;
+  }
+  .roadmap .textArea p {
+    margin-bottom:8px;
+    margin-left: 30px;
+    text-indent: -1em;
+  }
+
+  /*-------------------------
+    SP shop ショップ
+  -------------------------*/
+  .shop {
+    display: block;
+  }
+  .shopContent {
+    width: 100%;
+    margin-left:0;
+    margin-bottom:30px;
+  }
+
+  .shopContent .shopImg{
+    width: 89%;
+    margin: 0 auto;
+  }
+
+  .shopText {
+    width:80%;
+    margin: 0 auto 15px;
+  }
+
+  .shopContent h3 {
+    margin: 16px 0 13px;
+  }
+
+  /*-------------------------
+    SP activity　アクティビティ
+  -------------------------*/
+  .activity div:first-child,
+  .activity div:nth-child(4)
+  {
+    margin-left: 0;
+  }
+
+  .activity {
+    width: 100%;
+    display: block;
+  }
+
+  .activity div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .activity div .activityText {
+    width:100%;
+    margin: 0 auto 15px;
+  }
+
+  /*-------------------------
+    SP guide ガイド
+  -------------------------*/
+  .guide {
+    display: block;
+  }
+
+  .guide div{
+    width:100%;
+  }
+  .guideImage{
+    margin: 0 auto;
+  }
+
+  .guideImage img{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+  .guide div:nth-child(2){
+    width:100%;
+  }
+
+  .guide div p{
+    width: 88%;
+    margin-left: 20px;
+  }
+
+  .guide div p:nth-child(2){
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /*-------------------------
+  merit メリット
+  -------------------------*/
+
+  .merit {
+    display: block;
+  }
+  .merit div {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  .merit div:nth-child(4) {
+    margin: 0 auto 28px;
+  }
+
+
+  .merit div:nth-child(7) {
+    margin: 0 auto 5px;
+  }
+
+  .merit div p{
+    width: 90%;
+  }
+  .merit div img{
+    width: 73%;
+    margin-bottom: 10px;
+  }
+  .merit div:nth-child(2) img{
+    width: 74%;
+    margin-bottom: 7px;
+  }
+
+  .merit div:nth-child(3) img{
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .merit div:nth-child(3) p{
+    width: 80%;
+  }
+
+  .merit div:nth-child(4) img{
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .merit div:nth-child(4) p{
+    width: 64%;
+    margin-bottom: 10px;
+    letter-spacing: -0.2em;
+  }
+
+  .merit div:nth-child(4) p br,
+  .merit div:nth-child(7) p br,
+  .merit div:nth-child(8) p br
+  {
+    display: none;
+  }
+
+  .merit div:nth-child(5) img{
+    width: 80%;
+    height: 60%;
+    margin-bottom: 5px;
+  }
+
+
+  .merit div:nth-child(6) img{
+    width: 70%;
+  }
+
+  .merit div:nth-child(7) img{
+    width: 70%;
+    margin-bottom: 15px;
+  }
+
+  .merit div:nth-child(7) p{
+    width: 60%;
+  }
+
+  .merit div:nth-child(8) img{
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .merit div:nth-child(8) p{
+    width: 70%;
+    letter-spacing: -0.1em;
+  }
+
+  /*-------------------------
+    SP recruit 募集要項
+  -------------------------*/
+  .recruit {
+    width: 100%;
+    background: url(../assets/image/bg_logo.png)  50% 55% no-repeat;
+    background-size: 60% ;
+  }
+
+  .recruit .recruitDetail{
+    width: 76%;
+    margin: 0 auto 15px;
+    letter-spacing: -0.05em;
+  }
+
+  .recruitDetail p{
+    margin-bottom: 2px;
+  }
+
+  .recruitDetail p:last-child br:first-child{
+    display: block;
+  }
+
+  .recruit p:nth-child(7) .remarks{
+    display: block;
+  }
+
+  .welfare {
+    width: 78%;
+  }
+
+/*-------------------------
+    SP お問合せ　contact
+-------------------------*/
+  .contact{
+    display: block;
+  }
+
+  .contact .contactText{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact .contactText .contactAbout{
+    width: 82%;
+    margin: 0 auto 18px;
+    font-size: 18px;
+  }
+
+  .contact img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contact .contactText ul{
+    width: 80%;
+    margin: 0 auto 12px;
+  }
+
+/*-------------------------
+  company 企業概要
+-------------------------*/
+
+  .company {
+    width: 100%;
+  }
+  .company .companyDetail{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .company h3{
+    margin-bottom: 30px;
+  }
+
+  .companyDetail img {
+    display: block;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .companyDetail table{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .companyDetail table th{
+    text-align: left;
+    padding: 10px;
+  }
+
+  .companyDetail table td{
+    padding: 10px 0;
+    vertical-align: top;
+  }
+
+
+  .companyDetail table tr:nth-child(2) td p:nth-child(odd){
+    text-indent: 0;
+  }
+
+  .companyDetail table tr:nth-child(3) th{
+    padding: 10px;
+  }
+
+  .companyDetail table tr:nth-child(3) td{
+    letter-spacing: -0.1em;
+  }
+
+  /*-------------------------
+    SP footer フッター
+  -------------------------*/
+  footer .footerContent {
+    width: 88%;
+  }
+
+}
